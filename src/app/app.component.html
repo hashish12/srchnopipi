@@ -1,0 +1,10 @@
+
+<div (change)="updateResults()" (keyup)="updateResults()">
+  <input type="text" placeholder="Search" [(ngModel)]="searchValue">
+
+ 
+</div>
+
+<div *ngFor="let item of filteredItems">
+  {{ item.project }} => {{ item.type }}
+</div>
